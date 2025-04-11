@@ -515,6 +515,11 @@ header nav .navDiv .accountDiv button .my-icon {
   color: #a79595;
 }
 
+#contactMain .col .info p a{
+  text-decoration: none;
+  color: #000;
+}
+
 #contactMain .col .info h5{
   margin: 10px 0px;
   font-family: cursive;
