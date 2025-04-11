@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🤸 E-COMMERCE PRODUCTS  </title>
+    <!-- Bootstrap CSS Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS Links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap ICON Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid" id="Categories">
+      <!-- Header -->
+      <header>
+        <!-- Signup Pop Up -->
+        <div class="signUpPopUp">
+          <p>
+            Sign up and get 20% off to your first order.
+            <a href="#">Sign Up Now</a>
+          </p>
+          <button>x</button>
+        </div>
+
+        <!-- NavBar -->
+        <nav>
+          <div class="navDiv">
+            <h1 class="h1HerderHeading" onclick="homePageFunction()">
+              SHOP.CO
+            </h1>
+            <ul id="navUlList">
+              <li class="ulLiHum"><a href="./categories.html">On Sale</a></li>
+              <li class="ulLiHum">
+                <a href="./categories.html">New Arrivals</a>
+              </li>
+              <li class="ulLiHum"><a href="./categories.html">Brands</a></li>
+
+              <li class="ulLiHum"><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="accountDiv">
+              <button id="cartBtn" onclick="cartPageShowFunction()">
+                <i class="bi bi-cart2 my-icon"></i>
+              </button>
+              <button><i class="bi bi-person-circle my-icon"></i></button>
+              <p id="cartNum">0</p>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Toggle PAGE -->
+      <button id="FilterToggleButton" onclick="showFilterCate(this)">
+        <i class="bi bi-sliders2-vertical"></i>
+      </button>
+
+      <div id="categoriesPageStart">
+        <aside>
+          <div class="filterHeadingDiv">
+            <h5>Filters</h5>
+            <button id="FilterBtnICON">
+              <i class="bi bi-sliders2-vertical"></i>
+            </button>
+          </div>
+
+          <hr />
+
+          <div class="filterClothesTypeDiv">
+            <h5>Dress Style</h5>
+            <div id="filterClothesType">
+              <button onclick="filterClothesSection('CasualClothes')">
+                Casual
+              </button>
+              <button onclick="filterClothesSection('FormalClothes')">
+                Formal
+              </button>
+              <button onclick="filterClothesSection('PartyClothes')">
+                Party
+              </button>
+              <button onclick="filterClothesSection('GymClothes')">Gym</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- MAIN PAGE -->
+        <main>
+          <div class="cateMainSectionHeading">
+            <h1 class="">Buy Your Dreams</h1>
+            <p>
+              <span>Size By - </span>
+              <select name="#" id="#">
+                <option value="#">A-z</option>
+                <option value="#">A-z</option>
+                <option value="#">A-z</option>
+                <option value="#">A-z</option>
+              </select>
+            </p>
+          </div>
+
+          <!-- Casual Clothes -->
+          <section class="filterClothesSectionClass" id="CasualClothes">
+            <h3 class="dressHeading">Casual</h3>
+            <div id="CasualClothesDiv" class="setMEC">
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual1.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Gradient Graphic T-shirt</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>3.5/5</span>
+                  </div>
+
+                  <h5>$145</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual2.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Polo with Tipping Details</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$180</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual3.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Black Striped T-shirt</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5.0/5</span>
+                  </div>
+
+                  <h5>$120</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual4.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">SKINNY FIT JEANS</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>3.5/5</span>
+                  </div>
+
+                  <h5>$240</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual5.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">CHECKERED SHIRT</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$180</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual6.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">SLEEVE STRIPED T-SHIRT</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$130</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual7.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">VERTICAL STRIPED SHIRT</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5.0/5</span>
+                  </div>
+
+                  <h5>$212</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/casual/casual8.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">COURAGE GRAPHIC T-SHIRT</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>4.0/5</span>
+                  </div>
+
+                  <h5>$145</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Formal Clothes -->
+          <section class="filterClothesSectionClass" id="FormalClothes">
+            <h3 class="dressHeading">Formal</h3>
+
+            <div id="FormalClothesDiv" class="setMEC">
+              <div class="card">
+                <img src="./Assets/CategoriesPage/formal/formal1.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">FORMAL FIT SHIRT</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>4.0/5</span>
+                  </div>
+
+                  <h5>$180</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/formal/formal2.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">FORMAL BOST</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5.0/5</span>
+                  </div>
+
+                  <h5>$300</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/formal/formal3.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">SLIM FIT SHIRT</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                    <i class="bi bi-star-half"></i>
+                    <span>3.5/5</span>
+                  </div>
+
+                  <h5>$290</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/formal/formal4.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">SHINING SHIRT</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$210</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PARTY CLOTHES -->
+          <section class="filterClothesSectionClass" id="PartyClothes">
+            <h3 class="dressHeading">Party</h3>
+            <div id="PartyClothesDiv" class="setMEC">
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Party/party1.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Men's Suits 1</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5.0/5</span>
+                  </div>
+
+                  <h5>$550</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Party/party2.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Men's Suits 2</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$600</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Party/party3.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Men's Suits 3</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5.0/5</span>
+                  </div>
+
+                  <h5>$350</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Party/party4.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Men's Suits 4</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$480</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- GYM CLOTHES -->
+          <section class="filterClothesSectionClass" id="GymClothes">
+            <h3 class="dressHeading">Gym</h3>
+            <div id="GymClothesDiv" class="setMEC">
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Gym/Gym1.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Gym Combo 1</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$380</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Gym/Gym2.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Gym Combo 2</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>3.5/5</span>
+                  </div>
+
+                  <h5>$250</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Gym/Gym3.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Gym Combo 3</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5.0/5</span>
+                  </div>
+
+                  <h5>$180</h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./Assets/CategoriesPage/Gym/Gym1.jpg" alt="" />
+
+                <div class="card-body">
+                  <p class="card-title">Gym Combo 4</p>
+                  <div class="card-rating-div">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.5/5</span>
+                  </div>
+
+                  <h5>$300</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <section id="footer">
+        <div class="container footerABS">
+          <div class="row">
+            <div class="col col-12 col-md col-lg">
+              <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            </div>
+            <div class="col col-12 col-md col-lg">
+              <input
+                type="text"
+                placeholder="✉ Enter your email address"
+                class="ps-3"
+              />
+              <button class="">Subscribe to Newsletter</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Div -->
+        <div class="footerDiv">
+          <div class="container">
+            <div class="row">
+              <div class="col col-12 col-lg">
+                <h2 class="h1HerderHeading" onclick="homePageFunction()">
+                  SHOP.CO
+                </h2>
+                <p>
+                  We have clothes that suits your style and which you’re proud
+                  to wear. From women to men.
+                </p>
+                <div class="socialDiv">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="col col-5 col-md col-lg">
+                <h4>COMPANY</h4>
+                <a href="#">About </a>
+                <a href="#">Features</a>
+                <a href="#">Works</a>
+                <a href="#">Career</a>
+              </div>
+              <div class="col col-5 col-md col-lg">
+                <h4>HELP</h4>
+                <a href="#">Customer Support</a>
+                <a href="#">Delivery Details</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Private Policy</a>
+              </div>
+              <div class="col col-5 col-md col-lg">
+                <h4>FAQ</h4>
+                <a href="#">Account</a>
+                <a href="#">Manage Deliveries</a>
+                <a href="#">Orders</a>
+                <a href="#">Payments</a>
+              </div>
+              <div class="col col-5 col-md col-lg">
+                <h4>RESOURCES</h4>
+                <a href="#">Free eBooks</a>
+                <a href="#">Developers Tutorial</a>
+                <a href="#">How to - Blog</a>
+                <a href="#">Youtube Playlist</a>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="reservedDiv">
+              <p>© 2000-2021, All rights reserved</p>
+              <div class="PayCategoriesDiv">
+                <button id="payBtn1"></button>
+                <button id="payBtn2"></button>
+                <button id="payBtn3"></button>
+                <button id="payBtn4"></button>
+                <button id="payBtn5"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
