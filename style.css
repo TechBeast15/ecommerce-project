@@ -33,19 +33,21 @@
   width: 14rem;
   border-radius: 10px;
   padding: 10px;
-
+  box-shadow: inset 0px 0px 5px black;
   cursor: pointer;
+  border: 3px solid #e7e7e7;
 }
 
 .card:hover {
-  border: 1px solid #f0f0f0;
-  box-shadow: inset 0px 0px 5px black;
+  
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.589);
 }
 
 .card img {
   width: 100%;
   height: 200px;
   border-radius: 10px;
+  border: 1px solid #f0f0f0;
 }
 
 .card-body {
@@ -973,10 +975,11 @@ aside #filterClothesType button:hover {
 #FormalClothes,
 #PartyClothes,
 #GymClothes {
-  border: 1px solid #979595;
+  border: 3px solid #e7e7e7;
   padding: 10px;
   border-radius: 10px;
   margin: 15px 0px;
+  box-shadow: inset 0px 0px 5px black;
 }
 
 #categoriesPageStart main #CasualClothesDiv,
