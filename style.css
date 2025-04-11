@@ -904,7 +904,7 @@ header nav .navDiv .accountDiv button .my-icon {
 
 /* ASIDE sidebar ----------------------------------------------- */
 #categoriesPageStart aside {
-  border: 1px solid #b6b1b1;
+  border: 3px solid #e7e7e7 !important;
   position: relative;
   left: 0;
   top: 0;
@@ -915,6 +915,13 @@ header nav .navDiv .accountDiv button .my-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: inset 0px 0px 10px black;
+}
+
+
+aside h5{
+  font-family: cursive;
+  color: #8a6464;
 }
 
 #categoriesPageStart aside div {
@@ -922,13 +929,15 @@ header nav .navDiv .accountDiv button .my-icon {
   margin: 0px 0px;
 }
 
+
+
 .filterHeadingDiv {
   display: flex;
   justify-content: space-between;
 }
 
 aside div #FilterBtnICON {
-  border: none;
+  /* border: none; */
   background: transparent;
 }
 
@@ -943,10 +952,13 @@ aside #filterClothesType button {
   background-color: transparent;
   border: none;
   text-align: start;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #726c6c;
 }
 
 aside #filterClothesType button:hover {
   text-decoration: underline;
+  font-weight: 500;
 }
 
 /* Main content ------------------------------------------------ */
