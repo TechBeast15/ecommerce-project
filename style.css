@@ -1038,13 +1038,15 @@ aside #filterClothesType button:hover {
     padding: 2px;
   }
   .signUpPopUp p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .signUpPopUp button {
     font-weight: 200;
     font-size: 17px;
     margin-top: 7px;
+    right: 0;
+    color: rgba(255, 0, 119, 0.733);
   }
 
   /* HEADER NAVBAR */
