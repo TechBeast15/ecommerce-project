@@ -167,8 +167,6 @@ function AddToCartFunction() {
   }
 }
 
-
-
 // === DISPLAY CART DATA ===
 const shoppingDataDiv = document.getElementById("shoppingDataDiv");
 
@@ -214,7 +212,6 @@ function RemoveShoppingData(index) {
   localStorage.setItem("shoppingData", JSON.stringify(data));
   DisplayShoppingData();
   updateCartNum(); // update after removing
-
 }
 
 // === UPDATE QUANTITY IN CART ===
@@ -233,7 +230,6 @@ function quantityFunction(index, change) {
   localStorage.setItem("shoppingData", JSON.stringify(data));
   DisplayShoppingData();
   updateCartNum(); // update after changing quantity
-
 }
 
 // === BILLING CALCULATIONS ===
@@ -279,27 +275,25 @@ function filterClothesSection(id) {
   });
 
   const aside = document.querySelector("aside");
-  aside.classList.toggle("filterOpa")
+  aside.classList.toggle("filterOpa");
 }
 
 function showFilterCate(btn) {
   const aside = document.querySelector("aside");
-  aside.classList.toggle("filterOpa")
+  aside.classList.toggle("filterOpa");
 }
 
-
-function cartPageShowFunction(){
-  window.location.href = "./addToCart.html"
+function cartPageShowFunction() {
+  window.location.href = "./addToCart.html";
 }
 
-function homePageFunction(){
-  window.location.href = "./index.html"
+function homePageFunction() {
+  window.location.href = "./index.html";
 }
 
-function catePAgeNavi(){
-  window.location.href = "./categories.html"
+function catePAgeNavi() {
+  window.location.href = "./categories.html";
 }
-
 
 // const cartNum = document.getElementById("cartNum");
 
@@ -316,3 +310,47 @@ function updateCartNum() {
 }
 
 updateCartNum(); // when script loads
+
+document.addEventListener("DOMContentLoaded", () => {
+  runner();
+});
+
+function runner() {
+  const viewsDivCountingNumbers1 = document.getElementById("viewsDivCountingNumbers1");
+  const viewsDivCountingNumbers2 = document.getElementById("viewsDivCountingNumbers2");
+  const viewsDivCountingNumbers3 = document.getElementById("viewsDivCountingNumbers3");
+  let first = Number(viewsDivCountingNumbers1.innerHTML.split("+")[0]);
+
+  let secondFilter = viewsDivCountingNumbers2.innerHTML
+    .split("")
+    .filter((char) => char !== "+" && char !== ",")
+    .join("");
+
+    let thirdFilter = viewsDivCountingNumbers3.innerHTML
+    .split("")
+    .filter((char) => char !== "+" && char !== ",")
+    .join("");
+
+    let second = Number(secondFilter)
+    let third  = Number(thirdFilter)
+
+
+  for (let i = 0; i <= first; i++) {
+    setTimeout(() => {
+      viewsDivCountingNumbers1.innerHTML = `${i}+`;
+    }, i * 5);
+  }
+
+  for (let i = 0; i <= second; i++) {
+    setTimeout(() => {
+      viewsDivCountingNumbers2.innerHTML =  `${i}+`;
+    }, i * 3);
+  }
+
+  for (let i = 0; i <= third; i++) {
+    setTimeout(() => {
+      viewsDivCountingNumbers3.innerHTML =  `${i}+`;
+    }, i * 0.2);
+  }
+}
+

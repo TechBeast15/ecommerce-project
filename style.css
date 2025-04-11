@@ -216,12 +216,13 @@
 
 /* Billing Div */
 #BillingDiv {
-  border: 1px solid #9e9d9d;
+  border: 5px solid #f0f0f0;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  box-shadow: inset 0px 0px 5px black;
 }
 
 #BillingDiv div {
@@ -273,12 +274,15 @@
 
 /* CREATE ELEMENTS EDIT ++++++++++++++++++++++++++++ */
 .createDiv {
-  border: 1px solid #746666;
+  border: 3px solid #f0f0f0;
   margin: 10px;
   padding: 10px;
   border-radius: 20px;
   display: flex;
   gap: 10px;
+  box-shadow:inset 0px 0px 5px black;
+
+
 }
 
 .createDiv img {
@@ -353,9 +357,10 @@
 
 /* SHOPPING DATA +++++++++++++++++++++++++++++++++++ */
 #shoppingDataDiv {
-  border: 1px solid #726c6c;
+  border: 5px solid #f0f0f0;
   border-radius: 20px;
   padding: 10px;
+  box-shadow: 0px 0px 5px black;
 }
 /* ============================================================================== */
 /* PAGE HEADER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
