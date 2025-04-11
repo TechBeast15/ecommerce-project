@@ -9,6 +9,7 @@
   --font-para: Georgia, "Times New Roman", Times, serif;
 }
 
+
 .container-fluid {
   padding: 0;
   width: 100%;
@@ -36,6 +37,8 @@
   box-shadow: inset 0px 0px 5px black;
   cursor: pointer;
   border: 3px solid #e7e7e7;
+
+  transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -626,6 +629,8 @@ header nav .navDiv .accountDiv button .my-icon {
 #home #new-arrivals button:hover{
   background-color: #000;
   color: white;
+
+  transition:background-color 0.5s ease  ;
 }
 
 /* Top Selling ---------------------------- */
@@ -660,6 +665,8 @@ header nav .navDiv .accountDiv button .my-icon {
   border: 1px solid gray;
   font-size: large;
   border-radius: 17px;
+
+  transition:background-color 0.5s ease  ;
 }
 
 #home #top-selling button:hover{
@@ -720,7 +727,10 @@ header nav .navDiv .accountDiv button .my-icon {
   font-size: x-large;
   font-weight: bolder;
   background: transparent;
-  border: none;
+}
+
+.mySlideButtonsDiv{
+  display: flex;
 }
 
 #home #our-Happy-customer .mySlides {
