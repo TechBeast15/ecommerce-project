@@ -510,7 +510,7 @@ header nav .navDiv .accountDiv button .my-icon {
 
 
 #home main #hero-section {
-  height: 663px;
+  /* height: 663px; */
 }
 
 #home main #hero-section .row {
@@ -525,9 +525,11 @@ header nav .navDiv .accountDiv button .my-icon {
   padding: 10px;
   display: flex;
   align-items: start;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   padding: 3.7rem;
+
+  /* border: 1px solid #e00c0c; */
 }
 
 #home main #hero-section .row .col h1 {
@@ -568,10 +570,16 @@ header nav .navDiv .accountDiv button .my-icon {
   background-color: #000;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
+
+  
+
 }
 
-
+#home #brand-section img{
+  border: 1px solid #000;
+}
 
 /* New Arrivals */
 #home #new-arrivals {
@@ -1038,15 +1046,15 @@ aside #filterClothesType button:hover {
   }
 
   #hero-section .heroCol1 {
-    padding: 0px 20px !important;
+    padding: 100px 20px !important;
     height: 60% !important;
     display: flex;
-    justify-content: center !important;
+    justify-content: space-between !important;
     background-color: #f0f0f0;
   }
 
   #hero-section .heroCol1 h1 {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
 
   #hero-section .heroCol1 button {
@@ -1054,21 +1062,15 @@ aside #filterClothesType button:hover {
   }
 
 
+
   #hero-section .heroCol2 {
-    height: 40.1%;
+    /* border: 1px solid #000 !important; */
+    height: 300px !important;
     background-image: url("./Assets/HomePage/Img/Hero.png");
     background-position: center;
     background-size: 100% 100%;
   }
 
-  /* BRAND SECTION */
-
- 
-
-  #home #brand-section img {
-    width: 80px;
-    margin: 0px 10px;
-  }
 
   /* BROWESER SECTION */
   #home #BROWSE-BY-dress-STYLE .container .browserImageDiv {
@@ -1095,7 +1097,7 @@ aside #filterClothesType button:hover {
 
   /* Top Selling */
 
-  #home #top-selling .top-selling-products {
+  #home #top-selling .top-selling-products   {
     justify-content: center;
     gap: 10px;
   }
@@ -1137,7 +1139,7 @@ aside #filterClothesType button:hover {
   }
 
   #footer .footerABS .col h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 70%;
     font-weight: bolder;
     padding-bottom: 15px;
@@ -1189,7 +1191,8 @@ aside #filterClothesType button:hover {
 
   .card {
     flex-wrap: wrap;
-    flex: 0 0 13rem;
+    flex: 0 0 12rem;
+    height: 350px;
   }
 }
 
@@ -1265,28 +1268,32 @@ aside #filterClothesType button:hover {
 
 
   #hero-section .heroCol2 {
-    height: 40.1%;
+    height: 300px;
     background: url("./Assets/HomePage/Img/Hero.png");
     background-position: center;
     background-size: 100% 100%;
   }
 
+
+   /* PRODUCT ARRIVES */
+   #home #new-arrivals .new-arrivals-products {
+    justify-content: center;
+  }
+
   /* Top Selling Section +++++++++++++++++++++ */
 
   #home #top-selling .top-selling-products {
+    justify-content: center;
     gap: 10px;
   }
+
+ 
+
   #home #top-selling .top-selling-products .card .card-title {
     font-size: 11px;
   }
 
-  /* BRAND SECTION ++++++++++++++++++++++++++++ */
-
-
-  #home #brand-section img {
-    width: 80px;
-    margin: 0px 10px;
-  }
+ 
 
   /* BROWESER SECTION +++++++++++++++++++++++*/
   #home #BROWSE-BY-dress-STYLE .container .browserImageDiv {
