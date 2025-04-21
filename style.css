@@ -9,7 +9,6 @@
   --font-para: Georgia, "Times New Roman", Times, serif;
 }
 
-
 .container-fluid {
   padding: 0;
   width: 100%;
@@ -23,7 +22,7 @@
   font-size: 2rem;
 }
 
-.aciveSection {
+.activeSection {
   display: none;
 }
 
@@ -42,7 +41,6 @@
 }
 
 .card:hover {
-  
   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.589);
 }
 
@@ -73,12 +71,9 @@
   font-size: 11px;
 }
 
-
-#cartBtn:hover{
+#cartBtn:hover {
   text-shadow: 0px 0px 6px black;
 }
-
-
 
 /* Full Screen Card Details ======================================= */
 #zoomCardDetails {
@@ -204,15 +199,11 @@
   font-size: 31px;
 }
 
-
-
 #addToCartSection .container .col {
   margin: 10px;
   padding: 10px;
   border-radius: 20px;
 }
-
-
 
 /* Billing Div */
 #BillingDiv {
@@ -280,9 +271,7 @@
   border-radius: 20px;
   display: flex;
   gap: 10px;
-  box-shadow:inset 0px 0px 5px black;
-
-
+  box-shadow: inset 0px 0px 5px black;
 }
 
 .createDiv img {
@@ -457,17 +446,17 @@ header nav .navDiv ul li select:hover {
   text-decoration: underline;
 }
 
-header nav .navDiv .accountDiv{
+header nav .navDiv .accountDiv {
   position: relative;
 }
 
- button {
+button {
   background: transparent;
   border: none;
   margin: 0px 5px;
 }
 
-header nav .navDiv .accountDiv #cartNum{
+header nav .navDiv .accountDiv #cartNum {
   /* border: 1px solid black; */
   position: absolute;
   top: 80%;
@@ -481,53 +470,50 @@ header nav .navDiv .accountDiv button .my-icon {
   font-size: 25px;
 }
 
-
 /* CONTACT +++++++++++++++++++++++++++++++++++++++++ */
 
-#contactMain{
+#contactMain {
   margin-bottom: 7rem;
 }
 
-#contactMain .col{
+#contactMain .col {
   margin: 10px;
   padding: 10px;
 }
 
-#contactMain .col img{
+#contactMain .col img {
   width: 100%;
   border-radius: 20px;
- 
 }
 
-#contactMain .col .info{
+#contactMain .col .info {
   padding: 10px;
 }
 
-#contactMain .col .info h1{
+#contactMain .col .info h1 {
   font-family: serif;
   color: rgba(12, 12, 12, 0.842);
 }
 
-#contactMain .col .info p{
+#contactMain .col .info p {
   margin: 1px 0px;
   font-weight: 600;
-  font-family:serif;
+  font-family: serif;
   color: #a79595;
 }
 
-#contactMain .col .info p a{
+#contactMain .col .info p a {
   text-decoration: none;
   color: #000;
 }
 
-#contactMain .col .info h5{
+#contactMain .col .info h5 {
   margin: 10px 0px;
   font-family: cursive;
 }
 
 /* ============================================================================== */
 /* Home main Start ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
 
 #home main #hero-section {
   /* height: 663px; */
@@ -578,7 +564,6 @@ header nav .navDiv .accountDiv button .my-icon {
   margin: 25px 0px;
 }
 
-
 #home main #hero-section .row .col .viewsDiv div h2 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
@@ -592,12 +577,9 @@ header nav .navDiv .accountDiv button .my-icon {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-
-  
-
 }
 
-#home #brand-section img{
+#home #brand-section img {
   border: 1px solid #000;
 }
 
@@ -636,11 +618,11 @@ header nav .navDiv .accountDiv button .my-icon {
   border-radius: 17px;
 }
 
-#home #new-arrivals button:hover{
+#home #new-arrivals button:hover {
   background-color: #000;
   color: white;
 
-  transition:background-color 0.5s ease  ;
+  transition: background-color 0.5s ease;
 }
 
 /* Top Selling ---------------------------- */
@@ -676,10 +658,10 @@ header nav .navDiv .accountDiv button .my-icon {
   font-size: large;
   border-radius: 17px;
 
-  transition:background-color 0.5s ease  ;
+  transition: background-color 0.5s ease;
 }
 
-#home #top-selling button:hover{
+#home #top-selling button:hover {
   background-color: #000;
   color: white;
 }
@@ -739,7 +721,7 @@ header nav .navDiv .accountDiv button .my-icon {
   background: transparent;
 }
 
-.mySlideButtonsDiv{
+.mySlideButtonsDiv {
   display: flex;
 }
 
@@ -813,8 +795,6 @@ header nav .navDiv .accountDiv button .my-icon {
   margin-top: 7rem;
   width: 100%;
 }
-
-
 
 #footer .footerDiv .container .col {
   margin: 3px;
@@ -917,9 +897,9 @@ header nav .navDiv .accountDiv button .my-icon {
   border: 3px solid #e7e7e7 !important;
   position: relative;
   left: 0;
-  top: 0;
+  /* top: 80px !important; */
   width: 300px;
-  height: 100%;
+  height: 100% !important;
   padding: 10px;
   border-radius: 10px;
   display: flex;
@@ -928,8 +908,7 @@ header nav .navDiv .accountDiv button .my-icon {
   box-shadow: inset 0px 0px 10px black;
 }
 
-
-aside h5{
+aside h5 {
   font-family: cursive;
   color: #8a6464;
 }
@@ -938,8 +917,6 @@ aside h5{
   padding: 10px;
   margin: 0px 0px;
 }
-
-
 
 .filterHeadingDiv {
   display: flex;
@@ -951,7 +928,6 @@ aside div #FilterBtnICON {
   background: transparent;
 }
 
-
 aside #filterClothesType {
   display: flex;
   flex-direction: column;
@@ -962,11 +938,26 @@ aside #filterClothesType button {
   background-color: transparent;
   border: none;
   text-align: start;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #726c6c;
 }
 
 aside #filterClothesType button:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Price Filter Form */
+
+#priceFilterForm input,
+#priceFilterForm label {
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #726c6c;
+}
+
+
+aside #priceFilterForm label:hover {
   text-decoration: underline;
   font-weight: 500;
 }
@@ -1104,8 +1095,6 @@ aside #filterClothesType button:hover {
     width: 100%;
   }
 
-
-
   #hero-section .heroCol2 {
     /* border: 1px solid #000 !important; */
     height: 300px !important;
@@ -1113,7 +1102,6 @@ aside #filterClothesType button:hover {
     background-position: center;
     background-size: 100% 100%;
   }
-
 
   /* BROWESER SECTION */
   #home #BROWSE-BY-dress-STYLE .container .browserImageDiv {
@@ -1140,7 +1128,7 @@ aside #filterClothesType button:hover {
 
   /* Top Selling */
 
-  #home #top-selling .top-selling-products   {
+  #home #top-selling .top-selling-products {
     justify-content: center;
     gap: 10px;
   }
@@ -1219,13 +1207,13 @@ aside #filterClothesType button:hover {
     position: fixed !important;
     z-index: 2000;
     background-color: white;
-    top: 28% !important;
+    top: 0% !important;
     left: 0% !important;
     opacity: 0;
     visibility: hidden;
-    width: 95% !important;
-    height: 350px !important;
-    margin: 0px 10px;
+    width: 100% !important;
+    height: 100% !important;
+    /* margin: 0px 10px; */
   }
 
   aside div {
@@ -1236,6 +1224,15 @@ aside #filterClothesType button:hover {
     flex-wrap: wrap;
     flex: 0 0 12rem;
     height: 350px;
+  }
+
+  #FilterBtnICON{
+    display: none;
+  }
+
+  #FilterCloseBtn{
+    display: block;
+    font-size: 25px;
   }
 }
 
@@ -1308,8 +1305,6 @@ aside #filterClothesType button:hover {
     margin-top: 30px !important;
   }
 
-
-
   #hero-section .heroCol2 {
     height: 300px;
     background: url("./Assets/HomePage/Img/Hero.png");
@@ -1317,9 +1312,8 @@ aside #filterClothesType button:hover {
     background-size: 100% 100%;
   }
 
-
-   /* PRODUCT ARRIVES */
-   #home #new-arrivals .new-arrivals-products {
+  /* PRODUCT ARRIVES */
+  #home #new-arrivals .new-arrivals-products {
     justify-content: center;
   }
 
@@ -1330,13 +1324,9 @@ aside #filterClothesType button:hover {
     gap: 10px;
   }
 
- 
-
   #home #top-selling .top-selling-products .card .card-title {
     font-size: 11px;
   }
-
- 
 
   /* BROWESER SECTION +++++++++++++++++++++++*/
   #home #BROWSE-BY-dress-STYLE .container .browserImageDiv {
@@ -1415,13 +1405,13 @@ aside #filterClothesType button:hover {
     position: fixed !important;
     z-index: 2000;
     background-color: white;
-    top: 28% !important;
+    top: 0% !important;
     left: 0% !important;
     opacity: 0;
     visibility: hidden;
-    width: 95% !important;
+    width: 100% !important;
     height: 350px !important;
-    margin: 0px 10px;
+   
   }
 
   aside div {
@@ -1436,12 +1426,20 @@ aside #filterClothesType button:hover {
   .setMEC {
     justify-content: space-around !important;
   }
+
+  #FilterBtnICON{
+    display: none;
+  }
+
+  #FilterCloseBtn{
+    display: block;
+    font-size: 25px;
+  }
 }
 
 /* MD - Medium devices (≥768px) */
 @media (min-width: 768px) {
   /* Styles for tablets */
-
 
   #HumBerGer {
     display: none;
@@ -1489,8 +1487,6 @@ aside #filterClothesType button:hover {
   #hero-section .heroCol1 button {
     width: auto;
   }
-
- 
 
   #hero-section .heroCol2 {
     height: 100%;
@@ -1579,8 +1575,6 @@ aside #filterClothesType button:hover {
     visibility: visible;
   }
 
-
-
   .filterHeadingDiv {
     display: flex;
     justify-content: space-between;
@@ -1593,6 +1587,15 @@ aside #filterClothesType button:hover {
 
   #FilterToggleButton {
     display: none;
+  }
+
+  #FilterBtnICON{
+    display: block;
+  }
+
+  #FilterCloseBtn{
+    display: none;
+    font-size: 25px;
   }
 }
 
@@ -1661,8 +1664,6 @@ aside #filterClothesType button:hover {
 }
 
 #FilterToggleButton {
-
-
   background-color: transparent;
   border: none;
   font-size: large;
@@ -1682,7 +1683,10 @@ aside #filterClothesType button:hover {
   cursor: pointer;
 }
 
-
-.setMEC{
+.setMEC {
   justify-content: center !important;
+}
+
+.activePrice {
+  display: none;
 }

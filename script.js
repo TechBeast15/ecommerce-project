@@ -265,12 +265,14 @@ const filterClothesSectionClass = document.querySelectorAll(
 
 function filterClothesSection(id) {
   filterClothesSectionClass.forEach((section) => {
-    console.log(section);
+    // console.log(section);
 
-    section.classList.add("aciveSection");
+    // First, hide all sections
+    section.classList.add("activeSection");
 
-    if (section.id === id) {
-      section.classList.remove("aciveSection");
+    // Show only the selected one
+    if (section.id === id || id === "All") {
+      section.classList.remove("activeSection");
     }
   });
 
@@ -316,9 +318,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function runner() {
-  const viewsDivCountingNumbers1 = document.getElementById("viewsDivCountingNumbers1");
-  const viewsDivCountingNumbers2 = document.getElementById("viewsDivCountingNumbers2");
-  const viewsDivCountingNumbers3 = document.getElementById("viewsDivCountingNumbers3");
+  const viewsDivCountingNumbers1 = document.getElementById(
+    "viewsDivCountingNumbers1"
+  );
+  const viewsDivCountingNumbers2 = document.getElementById(
+    "viewsDivCountingNumbers2"
+  );
+  const viewsDivCountingNumbers3 = document.getElementById(
+    "viewsDivCountingNumbers3"
+  );
+
+  if (!viewsDivCountingNumbers1) {
+    return;
+  }
+
   let first = Number(viewsDivCountingNumbers1.innerHTML.split("+")[0]);
 
   let secondFilter = viewsDivCountingNumbers2.innerHTML
@@ -326,14 +339,13 @@ function runner() {
     .filter((char) => char !== "+" && char !== ",")
     .join("");
 
-    let thirdFilter = viewsDivCountingNumbers3.innerHTML
+  let thirdFilter = viewsDivCountingNumbers3.innerHTML
     .split("")
     .filter((char) => char !== "+" && char !== ",")
     .join("");
 
-    let second = Number(secondFilter)
-    let third  = Number(thirdFilter)
-
+  let second = Number(secondFilter);
+  let third = Number(thirdFilter);
 
   for (let i = 0; i <= first; i++) {
     setTimeout(() => {
@@ -343,14 +355,41 @@ function runner() {
 
   for (let i = 0; i <= second; i++) {
     setTimeout(() => {
-      viewsDivCountingNumbers2.innerHTML =  `${i}+`;
+      viewsDivCountingNumbers2.innerHTML = `${i}+`;
     }, i * 3);
   }
 
   for (let i = 0; i <= third; i++) {
     setTimeout(() => {
-      viewsDivCountingNumbers3.innerHTML =  `${i}+`;
+      viewsDivCountingNumbers3.innerHTML = `${i}+`;
     }, i * 0.2);
   }
+}
+
+const cardPrice = document.querySelectorAll(".cardPrice");
+
+function priceFilterFunction(price) {
+  cardPrice.forEach((card) => {
+    // Safely get the price text
+    const priceText = card.children[1].children[2].innerHTML;
+    const itemPrice = parseFloat(priceText.replace("$", ""));
+
+    // Reset visibility
+    card.classList.remove("activePrice");
+
+    // Filter based on selected price range
+    if (price === "200" && itemPrice >= 200) {
+      card.classList.add("activePrice");
+    } else if (price === "500" && (itemPrice <= 200 || itemPrice > 500)) {
+      card.classList.add("activePrice");
+    } else if (price === "1000" && itemPrice <= 500) {
+      card.classList.add("activePrice");
+    } else if (price === "All") {
+      // Show all – do nothing (we already removed the class)
+    } else if (!["All", "200", "500", "1000"].includes(price)) {
+      // Handle unexpected values
+      card.classList.add("activePrice");
+    }
+  });
 }
 
