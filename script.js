@@ -391,5 +391,10 @@ function priceFilterFunction(price) {
       card.classList.add("activePrice");
     }
   });
+
+
+  const aside = document.querySelector("aside");
+  aside.classList.toggle("filterOpa");
+ 
 }
 
