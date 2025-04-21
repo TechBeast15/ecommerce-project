@@ -350,7 +350,7 @@ function runner() {
   for (let i = 0; i <= first; i++) {
     setTimeout(() => {
       viewsDivCountingNumbers1.innerHTML = `${i}+`;
-    }, i * 5);
+    }, i * 30);
   }
 
   for (let i = 0; i <= second; i++) {
