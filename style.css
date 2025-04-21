@@ -1212,7 +1212,7 @@ aside #priceFilterForm label:hover {
     opacity: 0;
     visibility: hidden;
     width: 100% !important;
-    height: 100% !important;
+    height: 100vh !important;
     /* margin: 0px 10px; */
   }
 
