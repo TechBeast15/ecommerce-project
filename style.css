@@ -956,7 +956,6 @@ aside #filterClothesType button:hover {
   color: #726c6c;
 }
 
-
 aside #priceFilterForm label:hover {
   text-decoration: underline;
   font-weight: 500;
@@ -1226,11 +1225,11 @@ aside #priceFilterForm label:hover {
     height: 350px;
   }
 
-  #FilterBtnICON{
+  #FilterBtnICON {
     display: none;
   }
 
-  #FilterCloseBtn{
+  #FilterCloseBtn {
     display: block;
     font-size: 25px;
   }
@@ -1411,7 +1410,6 @@ aside #priceFilterForm label:hover {
     visibility: hidden;
     width: 100% !important;
     height: 350px !important;
-   
   }
 
   aside div {
@@ -1427,11 +1425,11 @@ aside #priceFilterForm label:hover {
     justify-content: space-around !important;
   }
 
-  #FilterBtnICON{
+  #FilterBtnICON {
     display: none;
   }
 
-  #FilterCloseBtn{
+  #FilterCloseBtn {
     display: block;
     font-size: 25px;
   }
@@ -1573,6 +1571,8 @@ aside #priceFilterForm label:hover {
     justify-content: space-between;
     opacity: 1;
     visibility: visible;
+
+    transition: 0.3s height ease;
   }
 
   .filterHeadingDiv {
@@ -1589,11 +1589,11 @@ aside #priceFilterForm label:hover {
     display: none;
   }
 
-  #FilterBtnICON{
+  #FilterBtnICON {
     display: block;
   }
 
-  #FilterCloseBtn{
+  #FilterCloseBtn {
     display: none;
     font-size: 25px;
   }
